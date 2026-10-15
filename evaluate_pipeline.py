@@ -10,8 +10,9 @@ logging.getLogger("ppocr").setLevel(logging.ERROR)
 logging.getLogger("paddle").setLevel(logging.ERROR)
 
 # -------------------- CONFIGURATION --------------------
-WEIGHTS_PATH = Path(r"D:\ANPR\runs\plate_detection\yolo11n_plate_run\weights\best.pt")
-TEST_IMAGES_DIR = Path(r"D:\ANPR\Dataset_1\State-wise_OLX") 
+ROOT = Path(__file__).resolve().parent
+WEIGHTS_PATH = ROOT / "runs" / "plate_detection" / "yolo11n_plate_run" / "weights" / "best.pt"
+TEST_IMAGES_DIR = ROOT / "Dataset_1" / "State-wise_OLX"
 
 print("Loading YOLO11 (GPU) and PaddleOCR (CPU)...")
 yolo_model = YOLO(str(WEIGHTS_PATH))

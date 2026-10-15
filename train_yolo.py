@@ -1,7 +1,7 @@
 from pathlib import Path
 from ultralytics import YOLO
 
-ROOT = Path(r"D:\ANPR")
+ROOT = Path(__file__).resolve().parent
 DATA_YAML = ROOT / "yolo_combined_v1" / "data.yaml"
 
 if __name__ == "__main__":

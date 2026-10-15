@@ -7,7 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 import cv2
 
-ROOT = Path(r"D:\ANPR")
+ROOT = Path(__file__).resolve().parent
 DATASET_1 = ROOT / "Dataset_1"
 OUTPUT = ROOT / "yolo_combined_v1"
 

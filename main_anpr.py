@@ -11,9 +11,10 @@ logging.getLogger("paddle").setLevel(logging.ERROR)
 logging.getLogger("ultralytics").setLevel(logging.ERROR)
 
 # -------------------- CONFIGURATION --------------------
-WEIGHTS_PATH = Path(r"D:\ANPR\runs\plate_detection\yolo11n_plate_run\weights\best.pt")
-TEST_IMAGE = Path(r"D:\ANPR\Dataset_1\State-wise_OLX\AN\AN1.jpg")
-OUTPUT_DIR = Path(r"D:\ANPR\output_results")
+ROOT = Path(__file__).resolve().parent
+WEIGHTS_PATH = ROOT / "runs" / "plate_detection" / "yolo11n_plate_run" / "weights" / "best.pt"
+TEST_IMAGE = ROOT / "Dataset_1" / "State-wise_OLX" / "AN" / "AN1.jpg"
+OUTPUT_DIR = ROOT / "output_results"
 
 def clean_text(text):
     """Filter out non-alphanumeric noise for strict license plate strings."""
