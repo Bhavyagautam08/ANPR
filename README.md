@@ -22,7 +22,7 @@ The detector and recognizer are deliberately separate. YOLO performs plate local
 
 Example output from the pipeline: the detected plate is highlighted and the OCR text is shown above the vehicle's plate.
 
-![ANPR inference example showing the detected license plate and OCR result](docs/images/anpr-inference-example.png)
+![ANPR inference output showing the detected license plate and OCR result](docs/images/result_AN1.jpg)
 
 *Example inference result for `AN01P9687`.*
 
