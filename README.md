@@ -153,4 +153,4 @@ The dataset preparation script shuffles eligible annotated records with seed `42
 
 ## License and data
 
-No dataset or model license is defined here. Check the source and usage terms for any images, pretrained weights, and dependencies before redistribution or commercial use. License plates can contain identifying information; handle collected images and predictions in accordance with applicable privacy and data-protection requirements.
+The project source code is licensed under the [MIT License](LICENSE). This license applies to the code and documentation in this repository; it does not grant rights to third-party datasets, pretrained model weights, or dependencies. Check their respective terms before redistribution or commercial use. License plates can contain identifying information; handle collected images and predictions in accordance with applicable privacy and data-protection requirements.
