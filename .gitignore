@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+
+# Local editor settings
+.vscode/
+
+# Datasets and generated artifacts
+Dataset_1/
+yolo_combined_v1/
+runs/
+weights/
+output_results/
+
+# Model weights and exported models
+*.pt
+*.onnx
+*.engine
